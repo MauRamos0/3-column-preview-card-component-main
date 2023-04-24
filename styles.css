@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  /* paragraphs */
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  /*backgrounds, headings, buttons*/
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+
+/* html styling */
+html {
+  background-color: var(--very-light-gray);
+}
+
+/* h2 styling */
+h2 {
+  font-family: "Big Shoulders Display";
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--very-light-gray);
+}
+
+/* p styling */
+p {
+  font-family: "lexend Deca";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.9375rem;
+  padding-bottom: 1rem;
+}
+
+/* main container styling */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 23.4375rem;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+/* container-1 styling */
+.container-1 {
+  background-color: var(--bright-orange);
+  color: var(--transparent-white);
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+/* container-2 styling */
+.container-2 {
+  background-color: var(--dark-cyan);
+  color: var(--transparent-white);
+}
+
+/* container-3 styling */
+.container-3 {
+  background-color: var(--very-dark-cyan);
+  color: var(--transparent-white);
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+/* all containers styling */
+.container-1,
+.container-2,
+.container-3 {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  max-width: 375px;
+  max-height: 31.25rem;
+  align-items: flex-start;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* button styling */
+button {
+  background-color: var(--very-light-gray);
+  display: inline-block;
+  border: none;
+  padding: 1.2rem;
+  border-radius: 2rem;
+  width: 80%;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn-1 {
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  color: var(--bright-orange);
+}
+
+.btn-1:active {
+  background-color: var(--bright-orange);
+  border: 1px solid var(--transparent-white);
+  color: var(--transparent-white);
+}
+
+.btn-2 {
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  color: var(--dark-cyan);
+}
+
+.btn-2:active {
+  background-color: var(--dark-cyan);
+  border: 1px solid var(--transparent-white);
+  color: var(--transparent-white);
+}
+
+.btn-3 {
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  color: var(--very-dark-cyan);
+}
+
+.btn-3:active {
+  background-color: var(--very-dark-cyan);
+  border: 1px solid var(--transparent-white);
+  color: var(--transparent-white);
+}
+
+/* attribution styling */
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* using a media query to make it responsive */
+@media only screen and (min-width: 600px) {
+  .main-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 90rem;
+    height: 57.5625rem;
+  }
+
+  .container-1 {
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+
+  .container-3 {
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+}
