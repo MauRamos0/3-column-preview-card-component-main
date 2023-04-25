@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
 
 :root {
+  /* primary colors */
   --bright-orange: hsl(31, 77%, 52%);
   --dark-cyan: hsl(184, 100%, 22%);
   --very-dark-cyan: hsl(179, 100%, 13%);
@@ -36,7 +37,7 @@ p {
 .main-container {
   display: flex;
   flex-direction: column;
-  max-width: 23.4375rem;
+  max-width: 53.5rem;
   margin: 0 auto;
   align-items: center;
   justify-content: center;
@@ -69,7 +70,7 @@ p {
   display: flex;
   flex-direction: column;
   padding: 3rem;
-  max-width: 375px;
+  max-width: 12.5rem;
   max-height: 31.25rem;
   align-items: flex-start;
   margin: 0 auto;
@@ -139,8 +140,10 @@ button {
   .main-container {
     display: flex;
     flex-direction: row;
-    max-width: 90rem;
-    height: 57.5625rem;
+    max-width: 52.87rem;
+    height: 43.75rem;
+    margin: 0 auto;
+    padding: 0;
   }
 
   .container-1 {
